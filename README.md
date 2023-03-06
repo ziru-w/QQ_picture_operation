@@ -11,8 +11,7 @@
     "op": "copy",  操作方式  
     "timename": 0, 是否以时间重命名  
     "minLayer": 1,      操作最低文件夹层级  
-    "maxLayer": 999  操作最高文件夹层级  
-
-
+    "maxLayer": 999  操作最高文件夹层级   
+}  
 
 merge.pym用来合并文件夹为一，可以用来合并qq图片
