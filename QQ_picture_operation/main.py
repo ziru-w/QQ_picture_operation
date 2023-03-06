@@ -46,11 +46,14 @@ def getTimeStamp(datetime='2020-4-06 00:00'):
     mkt = time.mktime(s_t)
     # print(mkt)
     return mkt
-def getFileTime(resource)->float:
-    mtime = os.path.getmtime(resource) #修改时间
+def getFileTime(resource,type='m')->float:
+    if type=='m':
+        time = os.path.getmtime(resource) #修改时间
+    else:
+        time = os.path.getatime(resource) #访问时间
     # print(mtime)
     # mtime_string = datetime.datetime.fromtimestamp(int(mtime))
-    return mtime
+    return time
 def merge(resource='',target='',op='copy',timename=0,oldDate='2020-4-06 00:00',newDate='2021-4-06 00:00',minLayer=1,maxLayer=999,layer=0):
     layer+=1
     # print(resource,layer)
