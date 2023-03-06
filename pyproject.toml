@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "qq-picture-operation"
+version = "0.1.0"
+description = "进行qq图片的操作，用来转移复制删除图片 进行qq图片的操作，用来转移复制删除图片"
+authors = ["ziru-w <77319678+ziru-w@users.noreply.github.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "qq_picture_operation"}]
+
+[tool.poetry.dependencies]
+python = "^3.6"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
